@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Taheri - Computer Engineering Researcher</title>
+    <title>Ali Taheri</title>
     <style>
         * {
             margin: 0;
@@ -12,226 +12,194 @@
         }
         
         body {
-            font-family: 'Arial', 'Helvetica', sans-serif;
+            font-family: Georgia, 'Times New Roman', serif;
             line-height: 1.6;
-            color: #333;
-            background-color: #f8f9fa;
+            color: #000;
+            background-color: #ffffff;
+            font-size: 16px;
         }
         
         .container {
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: white;
-            min-height: 100vh;
+            padding: 40px 20px;
         }
         
         header {
-            text-align: center;
-            padding: 40px 0;
-            border-bottom: 2px solid #eee;
             margin-bottom: 40px;
         }
         
         h1 {
             font-size: 2.5em;
-            color: #2c3e50;
-            margin-bottom: 10px;
-            font-weight: 600;
+            font-weight: normal;
+            color: #4169E1;
+            margin-bottom: 15px;
         }
         
         .subtitle {
-            font-size: 1.2em;
-            color: #666;
-            margin-bottom: 20px;
+            font-size: 1.1em;
+            color: #000;
+            margin-bottom: 8px;
+        }
+        
+        .affiliation {
+            color: #000;
+            margin-bottom: 15px;
         }
         
         .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-top: 20px;
+            margin-top: 15px;
+            font-size: 1em;
         }
         
         .contact-info a {
-            color: #2980b9;
+            color: #4169E1;
             text-decoration: none;
-            transition: color 0.3s;
         }
         
         .contact-info a:hover {
-            color: #1a5490;
             text-decoration: underline;
         }
         
-        .profile-section {
-            display: flex;
-            gap: 40px;
-            margin-bottom: 50px;
-            align-items: flex-start;
-        }
-        
-        .profile-image {
-            flex: 0 0 200px;
-        }
-        
-        .profile-image img {
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        
-        .bio {
-            flex: 1;
-            text-align: justify;
-        }
-        
-        .bio p {
-            margin-bottom: 15px;
-            line-height: 1.8;
-        }
-        
         section {
-            margin-bottom: 50px;
+            margin-bottom: 40px;
         }
         
         h2 {
-            color: #2c3e50;
-            font-size: 1.8em;
+            font-size: 1.5em;
+            font-weight: normal;
+            color: #4169E1;
             margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #e74c3c;
-            display: inline-block;
+            margin-top: 30px;
         }
         
         h3 {
-            color: #34495e;
-            font-size: 1.3em;
-            margin-bottom: 10px;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 5px;
             margin-top: 20px;
         }
         
-        .publication-item, .experience-item, .award-item {
+        p {
+            margin-bottom: 15px;
+            color: #000;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        
+        .news-item {
+            margin-bottom: 10px;
+            color: #000;
+        }
+        
+        .news-date {
+            font-weight: bold;
+            color: #000;
+        }
+        
+        .publication {
             margin-bottom: 20px;
-            padding: 15px;
-            background-color: #f8f9fa;
-            border-left: 4px solid #3498db;
-            border-radius: 4px;
         }
         
         .publication-title {
             font-weight: bold;
-            color: #2c3e50;
-            margin-bottom: 5px;
-        }
-        
-        .publication-authors {
-            color: #666;
-            font-style: italic;
+            color: #000;
             margin-bottom: 5px;
         }
         
         .publication-venue {
-            color: #e74c3c;
-            font-weight: 500;
+            color: #000;
+            font-style: italic;
         }
         
-        .experience-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 10px;
+        .experience-item {
+            margin-bottom: 25px;
         }
         
         .experience-title {
             font-weight: bold;
-            color: #2c3e50;
+            color: #000;
         }
         
         .experience-date {
-            color: #666;
-            font-size: 0.9em;
+            color: #000;
+            font-style: normal;
         }
         
         .experience-location {
-            color: #666;
-            font-style: italic;
-            margin-bottom: 10px;
+            color: #000;
+            margin: 5px 0;
+        }
+        
+        .advisor {
+            color: #000;
+            margin-bottom: 5px;
         }
         
         ul {
             margin-left: 20px;
             margin-top: 10px;
+            margin-bottom: 10px;
         }
         
         li {
-            margin-bottom: 8px;
+            margin-bottom: 5px;
+            color: #000;
             line-height: 1.6;
         }
         
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
+        .award-item {
+            margin-bottom: 10px;
+            color: #000;
+        }
+        
+        .award-title {
+            font-weight: bold;
+            color: #000;
         }
         
         .skill-category {
-            background-color: #f8f9fa;
-            padding: 15px;
-            border-radius: 8px;
-            border: 1px solid #e0e0e0;
-        }
-        
-        .skill-category h4 {
-            color: #2c3e50;
             margin-bottom: 10px;
-            font-size: 1.1em;
+            color: #000;
         }
         
-        .news-item {
-            margin-bottom: 15px;
-            padding: 10px;
-            background-color: #fff3cd;
-            border-left: 4px solid #ffc107;
-            border-radius: 4px;
-        }
-        
-        .news-date {
+        .skill-label {
             font-weight: bold;
-            color: #856404;
-            margin-right: 10px;
+            color: #000;
         }
         
-        footer {
-            text-align: center;
-            padding: 30px 0;
-            margin-top: 50px;
-            border-top: 1px solid #eee;
-            color: #666;
-            font-size: 0.9em;
+        .teaching-item {
+            margin-bottom: 5px;
+            color: #000;
         }
         
-        @media (max-width: 768px) {
-            .profile-section {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
+        /* Links */
+        a {
+            color: #4169E1;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Special formatting */
+        .first-section {
+            margin-top: 0;
+        }
+        
+        .first-section h2 {
+            margin-top: 0;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
             }
             
-            .bio {
-                text-align: justify;
-            }
-            
-            .contact-info {
-                flex-direction: column;
-                gap: 10px;
-            }
-            
-            .experience-header {
-                flex-direction: column;
-                align-items: flex-start;
+            .container {
+                padding: 20px 15px;
             }
         }
     </style>
@@ -240,178 +208,123 @@
     <div class="container">
         <header>
             <h1>Ali Taheri</h1>
-            <p class="subtitle">Computer Engineering Researcher</p>
-            <p class="subtitle">Isfahan University of Technology</p>
+            <div class="affiliation">
+                Isfahan University of Technology<br>
+                Faculty of Computer Engineering<br>
+                Isfahan, Iran
+            </div>
             <div class="contact-info">
-                <a href="mailto:taheri.a@ec.iut.ac.ir">📧 taheri.a@ec.iut.ac.ir</a>
-                <a href="tel:+989929181755">📱 +98 992 918 1755</a>
-                <a href="https://github.com/AliTaheri2002" target="_blank">💻 GitHub</a>
-                <span>📍 Isfahan, Iran</span>
+                [<a href="https://github.com/AliTaheri2002" target="_blank">GitHub</a>]<br>
+                E-mail: taheri.a [at] ec.iut.ac.ir
             </div>
         </header>
 
-        <section class="profile-section">
-            <div class="bio">
-                <h2>About Me</h2>
-                <p>
-                    I am a final-year undergraduate student in Computer Engineering at Isfahan University of Technology (IUT), 
-                    ranked 3rd among my peers with a GPA of 3.89/4.00. My research interests lie at the intersection of 
-                    trustworthy machine learning and deep learning, with a particular focus on fine-tuning foundation models 
-                    and machine unlearning.
-                </p>
-                <p>
-                    Currently, I am working as a Research Assistant at Hong Kong Baptist University under the supervision of 
-                    Dr. Qizhou Wang and Prof. Bo Han, where I am developing novel methodologies for LLM unlearning. I have 
-                    also contributed to research in multi-label object detection and vision-language models through collaborations 
-                    with leading researchers in the field.
-                </p>
-                <p>
-                    My academic journey has been enriched by participation in Mathematics and Computer Olympiads, where I spent 
-                    2 years focusing on algorithms and problem-solving. This foundation has helped me excel in competitive programming, 
-                    including achieving 10th place in the 46th ICPC West Asia Regional Contest.
-                </p>
-            </div>
+        <section class="first-section">
+            <h2>Short Bio</h2>
+            <p>
+                I am a final-year undergraduate student in Computer Engineering at Isfahan University of Technology (IUT), 
+                ranked 3rd among my peers with a GPA of 3.89/4.00. My research interests lie at the intersection of 
+                trustworthy machine learning and deep learning, with a particular focus on fine-tuning foundation models 
+                and machine unlearning.
+            </p>
+            <p>
+                Currently, I am working as a Research Assistant at Hong Kong Baptist University under the supervision of 
+                <a href="https://qizhouwang.github.io/" target="_blank">Dr. Qizhou Wang</a> and 
+                <a href="https://bhanml.github.io/" target="_blank">Prof. Bo Han</a>, where I am developing novel methodologies 
+                for LLM unlearning. I have also contributed to research in multi-label object detection and vision-language 
+                models through collaborations with leading researchers in the field.
+            </p>
+            <p>
+                My academic journey has been enriched by participation in Mathematics and Computer Olympiads, where I spent 
+                2 years focusing on algorithms and problem-solving. This foundation has helped me excel in competitive programming, 
+                including achieving 10th place in the 46th ICPC West Asia Regional Contest.
+            </p>
         </section>
 
         <section>
             <h2>News</h2>
             <div class="news-item">
-                <span class="news-date">June 2025:</span> Paper on novel LLM fine-tuning methodology submitted to NeurIPS 2025
-            </div>
-            <div class="news-item">
-                <span class="news-date">Feb 2025:</span> Started research position at Hong Kong Baptist University focusing on LLM Unlearning
-            </div>
-            <div class="news-item">
-                <span class="news-date">Jun 2024:</span> Began collaboration with Prof. Oliver Schulte from SFU on MOD-CLIP project
-            </div>
-        </section>
-
-        <section>
-            <h2>Education</h2>
-            <div class="experience-item">
-                <div class="experience-header">
-                    <span class="experience-title">Bachelor of Computer Engineering</span>
-                    <span class="experience-date">2021 - 2025</span>
-                </div>
-                <div class="experience-location">Isfahan University of Technology (IUT), Isfahan, Iran</div>
-                <ul>
-                    <li>GPA: 3.89/4.00, 18.78/20 (Ranked 3rd among students)</li>
-                    <li>University Average: 14.67/20, Faculty: 15.44/20, Major: 15.92/20</li>
-                    <li>Relevant Coursework: Artificial Intelligence (19.93/20), Computational Intelligence (18.9/20), 
-                        Algorithm Design, Data Structures (20/20), Database Systems, Computer Networks</li>
-                </ul>
+                <span class="news-date">[June 2025]</span> Paper submitted to NeurIPS 2025
             </div>
         </section>
 
         <section>
             <h2>Publications</h2>
-            <div class="publication-item">
-                <div class="publication-title">Novel LLM Fine-tuning Methodology with Significant Improvement over Different Benchmarks</div>
-                <div class="publication-authors">Ali Taheri, et al. (Advised by Prof. Bo Han)</div>
-                <div class="publication-venue">Submitted to NeurIPS 2025</div>
-            </div>
+            <ul>
+                <li>
+                    <strong>Novel LLM Fine-tuning Methodology with Significant Improvement over Different Benchmarks</strong><br>
+                    <em>Submitted to NeurIPS 2025</em>
+                </li>
+            </ul>
         </section>
 
         <section>
             <h2>Research Experience</h2>
             
-            <div class="experience-item">
-                <div class="experience-header">
-                    <span class="experience-title">Research Assistant - LLM Unlearning</span>
-                    <span class="experience-date">Feb 2025 - May 2025</span>
-                </div>
-                <div class="experience-location">Hong Kong Baptist University | Supervised by Dr. Qizhou Wang & Prof. Bo Han</div>
-                <ul>
-                    <li>Member of Trustworthy Machine Learning and Reasoning (TMLR) Group</li>
-                    <li>Developing effective methodologies for removing specific knowledge from large language models</li>
-                    <li>Working on a novel and highly effective approach for LLM unlearning</li>
-                    <li>Submitted research paper to NeurIPS 2025 conference</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="experience-header">
-                    <span class="experience-title">Research Assistant - MOD-CLIP Project</span>
-                    <span class="experience-date">Jun 2024 - Present</span>
-                </div>
-                <div class="experience-location">Isfahan University of Technology | Supervised by Prof. Abdolreza Mirzaei & Prof. Oliver Schulte (SFU)</div>
-                <ul>
-                    <li>Member of Pattern Recognition and Soft Computing Research Laboratory</li>
-                    <li>Developing one-stage multi-label object detection approach for videos</li>
-                    <li>Combining CLIP distillation with graph neural network-based label correlation modeling</li>
-                    <li>Improving detection accuracy and generalization to unseen scenarios</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="experience-header">
-                    <span class="experience-title">Research Intern - LLMs and Vision-Language Models</span>
-                    <span class="experience-date">Sep 2023 - Apr 2024</span>
-                </div>
-                <div class="experience-location">Hong Kong Baptist University | Supervised by Dr. Qizhou Wang & Prof. Bo Han</div>
-                <ul>
-                    <li>Member of Trustworthy Machine Learning and Reasoning (TMLR) Group</li>
-                    <li>Explored capabilities and challenges of Large Language Models and Vision-Language Models</li>
-                    <li>Contributed to understanding how these models can be improved for trustworthy and reliable AI applications</li>
-                </ul>
-            </div>
+            <ul>
+                <li>
+                    <strong>Research Assistant</strong>, 2025<br>
+                    Hong Kong Baptist University, TMLR Group<br>
+                    Advised by Dr. Qizhou Wang and Prof. Bo Han<br>
+                    Remote
+                </li>
+                
+                <li>
+                    <strong>Research Assistant</strong>, 2024 - Present<br>
+                    Isfahan University of Technology, Pattern Recognition Lab<br>
+                    Advised by Prof. Abdolreza Mirzaei and Prof. Oliver Schulte<br>
+                    Isfahan, Iran
+                </li>
+                
+                <li>
+                    <strong>Research Intern</strong>, 2023 - 2024<br>
+                    Hong Kong Baptist University, TMLR Group<br>
+                    Advised by Dr. Qizhou Wang and Prof. Bo Han<br>
+                    Remote
+                </li>
+                
+                <li>
+                    <strong>ML/CV Developer</strong>, 2022<br>
+                    Sanat Apadana<br>
+                    Isfahan, Iran
+                </li>
+            </ul>
         </section>
 
         <section>
             <h2>Honors & Awards</h2>
-            <div class="award-item">
-                <strong>3rd Place</strong> - Machine Learning Competition (2022)<br>
-                <em>Competition featured both university and non-university teams</em>
-            </div>
-            <div class="award-item">
-                <strong>10th Place</strong> - 46th ICPC West Asia Regional Contest (2022)
-            </div>
-            <div class="award-item">
-                <strong>1st Place</strong> - ICPC Competitions at Isfahan University of Technology (2022 & 2023)
-            </div>
+            <ul>
+                <li><strong>3rd Place</strong>, Machine Learning Competition, 2022</li>
+                <li><strong>10th Place</strong>, 46th ICPC West Asia Regional Contest, 2022</li>
+                <li><strong>1st Place</strong>, ICPC Competitions at Isfahan University of Technology, 2022 & 2023</li>
+            </ul>
         </section>
 
         <section>
             <h2>Teaching Experience</h2>
-            <div class="experience-item">
-                <div class="experience-header">
-                    <span class="experience-title">Teaching Assistant</span>
-                    <span class="experience-date">Sep 2022 - Present</span>
-                </div>
-                <div class="experience-location">Isfahan University of Technology</div>
-                <ul>
-                    <li>Computational Intelligence (Spring 2025)</li>
-                    <li>Artificial Intelligence (Fall 2024)</li>
-                    <li>Data Structures (Fall 2024 / Fall 2023)</li>
-                    <li>Software Engineering (Fall 2024)</li>
-                    <li>Database (Fall 2024)</li>
-                    <li>Algorithm Design (Spring 2024)</li>
-                    <li>Fundamentals of Programming (Fall 2022)</li>
-                </ul>
-            </div>
+            <ul>
+                <li>Teaching Assistant, Isfahan University of Technology (2022 - Present)
+                    <ul>
+                        <li>Computational Intelligence (Spring 2025)</li>
+                        <li>Artificial Intelligence (Fall 2024)</li>
+                        <li>Data Structures (Fall 2024, Fall 2023)</li>
+                        <li>Software Engineering (Fall 2024)</li>
+                        <li>Database (Fall 2024)</li>
+                        <li>Algorithm Design (Spring 2024)</li>
+                        <li>Fundamentals of Programming (Fall 2022)</li>
+                    </ul>
+                </li>
+            </ul>
         </section>
 
         <section>
             <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>Programming Languages</h4>
-                    <p>C, C++, Python, R, Java, MATLAB, SQL</p>
-                </div>
-                <div class="skill-category">
-                    <h4>Machine Learning Tools</h4>
-                    <p>PyTorch, PyTorch Geometric, TensorFlow, Keras, OpenCV, Scikit-Learn, NumPy, Pandas</p>
-                </div>
-                <div class="skill-category">
-                    <h4>Databases & Technologies</h4>
-                    <p>SQL Server, MySQL, PostgreSQL, QT, KNIME, Power BI</p>
-                </div>
-            </div>
+            <ul>
+                <li><strong>Programming Languages:</strong> C, C++, Python, R, Java, MATLAB, SQL</li>
+                <li><strong>Machine Learning:</strong> PyTorch, PyTorch Geometric, TensorFlow, Keras, OpenCV, Scikit-Learn, NumPy, Pandas</li>
+                <li><strong>Tools & Technologies:</strong> SQL Server, MySQL, PostgreSQL, QT, KNIME, Power BI</li>
+            </ul>
         </section>
-
-        <footer>
-            <p>&copy; 2025 Ali Taheri. All rights reserved. | Last updated: June 2025</p>
-        </footer>
     </div>
 </body>
 </html>
