@@ -15,14 +15,18 @@
             font-family: Georgia, 'Times New Roman', serif;
             line-height: 1.6;
             color: #000;
-            background-color: #ffffff;
+            background-color: #f5f5f5;
             font-size: 16px;
+            min-height: 100vh;
         }
         
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 900px;
+            margin: 20px auto;
             padding: 40px 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            min-height: calc(100vh - 40px);
         }
         
         header {
@@ -63,12 +67,10 @@
         
         section {
             margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #999;
         }
         
         section:last-child {
-            border-bottom: none;
+            margin-bottom: 0;
         }
         
         h2 {
@@ -77,6 +79,8 @@
             color: #4169E1;
             margin-bottom: 20px;
             margin-top: 30px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #999;
         }
         
         h3 {
@@ -206,6 +210,18 @@
             
             .container {
                 padding: 20px 15px;
+                margin: 10px;
+                box-shadow: none;
+            }
+            
+            body {
+                background-color: #ffffff;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 1000px) {
+            .container {
+                margin: 20px 20px;
             }
         }
     </style>
@@ -216,7 +232,7 @@
             <h1>Ali Taheri</h1>
             <div class="subtitle">Undergraduate Student</div>
             <div class="affiliation">
-                Isfahan University of Technology<br>
+                <a href="https://english.iut.ac.ir/" target="_blank">Isfahan University of Technology</a><br>
                 Faculty of Computer Engineering<br>
                 Isfahan, Iran
             </div>
@@ -240,7 +256,10 @@
                 <a href="https://bhanml.github.io/" target="_blank">Prof. Bo Han</a>, where I am developing novel methodologies 
                 for LLM unlearning. I have also contributed to research in multi-label object detection and vision-language 
                 models under the supervision of <a href="https://people.iut.ac.ir/en/mirzaei" target="_blank">Prof. Abdolreza Mirzaei</a> 
-                and advised by <a href="https://www.cs.sfu.ca/~oschulte/" target="_blank">Prof. Oliver Schulte</a> from SFU, Canada.
+                and advised by <a href="https://www.cs.sfu.ca/~oschulte/" target="_blank">Prof. Oliver Schulte</a> from SFU, Canada, 
+                working on the ROAD-R 2023 NeurIPS challenge. Additionally, I have engaged in collaborative research with 
+                <a href="https://www.linkedin.com/in/hamid-sh-61532218/" target="_blank">Dr. Hamid Shojaei</a> from Google Inc., 
+                exploring the integration of advanced machine learning techniques and large language models to improve efficiency and innovation in various workflows.
             </p>
             <p>
                 My academic journey has been enriched by participation in Mathematics Olympiad and programming courses for ICPC and algorithmic competitions, where I spent 
@@ -264,6 +283,12 @@
                     Isfahan University of Technology, Pattern Recognition Lab<br>
                     Advised by Prof. Abdolreza Mirzaei and Prof. Oliver Schulte<br>
                     Isfahan, Iran
+                </li>
+                
+                <li>
+                    <strong>Research Project</strong>, Summer 2024<br>
+                    Chipstack, USA (Remote)<br>
+                    Research Collaboration with Dr. Hamid Shojaei (Google Inc.)<br>
                 </li>
                 
                 <li>
