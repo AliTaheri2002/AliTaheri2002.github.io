@@ -8,14 +8,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-		<meta name="description" content="Ali Taheri - Computer Engineering Student & AI Researcher"/>
-		<meta name="keywords" content="Ali Taheri, Computer Engineering, Machine Learning, AI Research, Isfahan University of Technology"/>
+		<meta name="description" content="Ali Taheri's website, biography, education, previous experience and published papers."/>
+		<meta name="keywords" content="alitaheri, AliTaheri, Ali Taheri, ali taheri github, ali taheri cv"/>
 		
 		<meta name="author" content="Ali Taheri" />
+		<meta name="copyright" content="Work protected by copyright; no distribution without permission." />
 		
 		<!-- Title + Icon -->
 		<title>Ali Taheri</title>
-		<link rel="icon" type="image/x-icon" href="assets/documents/imgs/ali-taheri.ico">
+		<link rel="icon" type="image/x-icon" href="assets/documents/imgs/AliTaheri.ico">
 
 		<!-- Improve SEO -->
 		<meta name="robots" content="index,follow" />
@@ -53,6 +54,8 @@
 		<!-- Bottom rounded button -->
 		<div class="options-button" id="options-toggler"><i class="fa-light fa-arrows-repeat"></i></div>
 		<div class="options-button" id="theme"><i class="fa-duotone fa-lightbulb"></i></div>
+		<div class="options-button" id="lan"><img class="lang-flag" src="https://flagcdn.com/w20/us.png" alt="Flag indicating the english language is selected"></div>
+
 
 		<!-- Navbar  -->
 		<nav id="top-nav" class="navbar navbar-expand-md navbar-light bg-light flex-md-nowrap flex-wrap">
@@ -63,22 +66,35 @@
 				<div class="navbar-collapse collapse flex-grow-1 justify-content-center" id="collapsingNavbar3">
 					<ul class="navbar-nav mx-auto language" id="navbarList">
 						<li class="nav-item">
-							<a class="nav-link active" id="aboutme" href="#" data-en="About"></a>
+							<a class="nav-link active" id="aboutme" href="#" 
+								data-es="Sobre Mi" 
+								data-en="About Me">
+								About Me
+							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="education" href="#" data-en="Education"></a>
+							<a class="nav-link" id="education" href="#" 
+								data-es="Educación" 
+								data-en="Education">
+						</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="publications" href="#" data-en="Publications"></a>
+							<a class="nav-link" id="publications" href="#" 
+								data-es="Publicaciones" 
+								data-en="Publications">
+						</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="research" href="#" data-en="Research"></a>
+							<a class="nav-link" id="blog" href="#" 
+								data-es="Blog" 
+								data-en="Blog">
+							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="experience" href="#" data-en="Experience"></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="awards" href="#" data-en="Awards"></a>
+							<a class="nav-link" id="experience" href="#" 
+								data-es="" 
+								data-en="Experience">
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -88,33 +104,40 @@
 		<div class="container" id="main-content">
 			<div class="row content" id="section-content">
 				
-				<!-- Ali Taheri profile -->
+				<!-- Ali Taheri profile and contact info -->
 				<div id="leftPanel" class="col-md-3 language">
 					<div class="row mb-3">
 						<div class="col">
-							<img src="assets/documents/imgs/ali-taheri.jpg" class="rounded me-auto d-block img-fluid profilepicture" alt="Ali Taheri">
+							<img src="assets/documents/imgs/AliTaheri.jpg" class="rounded me-auto d-block img-fluid profilepicture" alt="Ali Taheri profile picture">
 						</div>
 					</div>
 
 					<h3 class="mb-2">Ali Taheri</h3>
 
 					<p class="mb-4">
-						<span class="t-secondary">Computer Engineering Student<br>Isfahan University of Technology</span>
+						<span class="t-secondary" data-es="" 
+						data-en="Computer Engineering Student at Isfahan University of Technology"></span>
 					</p>
 					
 					<div class="row mb-2">
 						<div class="col-1">
-							<i class="fal fa-map-marker-alt"></i>
+							<i class="fal fa-map-marker-alt" aria-hidden="true"></i>
 						</div>
+
 						<div class="col-10">
-							Isfahan, Iran
+							Isfahan, 
+							<span 
+								data-es="" 
+								data-en="Iran">
+							</span>
 						</div>
 					</div>
 
 					<div class="row mb-2">
 						<div class="col-1">
-							<i class="fa-regular fa-envelope"></i>
+							<i class="fa-regular fa-envelope" aria-hidden="true"></i>
 						</div>
+
 						<div class="col-10">
 							<a href="mailto:taheri.a@ec.iut.ac.ir" class="link-dark">taheri.a@ec.iut.ac.ir</a>
 						</div>
@@ -122,8 +145,9 @@
 
 					<div class="row mb-2">
 						<div class="col-1">
-							<i class="fa-brands fa-linkedin"></i>
+							<i class="fa-brands fa-linkedin" aria-hidden="true"></i>
 						</div>
+
 						<div class="col-10">
 							<a href="https://www.linkedin.com/in/ali-taheri2002/" class="link-dark" target="_blank">LinkedIn</a>
 						</div>
@@ -131,36 +155,56 @@
 
 					<div class="row mb-2">
 						<div class="col-1">
-							<i class="fab fa-github"></i>
+							<i class="fab fa-github" aria-hidden="true"></i>
 						</div>
+
 						<div class="col-10">
 							<a href="https://github.com/AliTaheri2002" class="link-dark" target="_blank">GitHub</a>
 						</div>
 					</div>
 
-					<div class="row mb-2">
-						<div class="col-1">
-							<i class="ai ai-google-scholar"></i>
-						</div>
-						<div class="col-10">
-							<a href="https://scholar.google.com/citations?user=EPblwPQAAAAJ&hl=en&oi=sra" class="link-dark" target="_blank">Google Scholar</a>
-						</div>
-					</div>
 				</div>
 
-				<!-- About -->
+				<!-- About Me -->
 				<div class="col-md-8 offset-md-1 mb-5 active" id="aboutmeContent">
 					<div class="container">
-						<p>
-							Final-year Computer Engineering student at Isfahan University of Technology, ranked 1st in Software Engineering Specialization. 
-							Research interests include Trustworthy Machine Learning, Cyber-Physical Systems, Machine Unlearning, and Deep Learning.
-						</p>
-						
-						<h5 class="mt-4">Research Interests</h5>
-						<p>
-							Trustworthy Machine Learning • Cyber-Physical Systems • Deep Learning • Machine Unlearning • 
-							Image Processing • Formal Methods • Algorithms
-						</p>
+						<div class="row language">
+							<p class="mt-2 justify" 
+								data-es="" 
+								data-en="I am a final-year Computer Engineering student at Isfahan University of Technology (IUT), ranked 1st in Software Engineering Specialization and 3rd among all computer engineering peers. My research focuses on Trustworthy Machine Learning, Cyber-Physical Systems, Machine Unlearning, and Deep Learning. I have been fortunate to work with leading research groups including the Trustworthy Machine Learning and Reasoning (TMLR) Group at Hong Kong Baptist University under Prof. Bo Han and Dr. Qizhou Wang, and currently conducting research at Max Planck Institute for Software Systems (MPI-SWS) under Prof. Sadegh Soudjani.">
+							</p>
+
+							<h4 id="researchinterestsH4" class="mt-3" 
+								data-es="Research Interests" 
+								data-en="Research Interests">
+							</h4>
+
+							<p class="mt-1"
+								data-es=""
+								data-en="Trustworthy Machine Learning, Cyber-Physical Systems, Deep Learning, Machine Unlearning, Image Processing, Formal Methods, Algorithms">
+							</p>
+
+							<h4 id="honors-and-awards" class="mt-3" data-es="Honors and Awards" data-en="Honors and Awards"></h4>
+
+							<ul class="mt-1">
+								<li class="abme-honors-bullet">
+									<strong>Highest Grade for Undergraduate Thesis Project</strong> - Isfahan University of Technology, 2025
+								</li>
+								<li class="abme-honors-bullet mt-2">
+									<strong>1st Place in ICPC</strong> - Isfahan University of Technology, 2023
+								</li>
+								<li class="abme-honors-bullet mt-2">
+									<strong>10th Place in the 46th ICPC West Asia Regional Contest</strong> - 2023
+								</li>
+								<li class="abme-honors-bullet mt-2">
+									<strong>3rd Place in National Machine Learning Competition</strong> - 2022
+								</li>
+								<li class="abme-honors-bullet mt-2">
+									<strong>1st Place in ICPC</strong> - Isfahan University of Technology, 2022
+								</li>
+							</ul>
+
+						</div>
 					</div>
 				</div>
 
@@ -168,11 +212,18 @@
 				<!-- Education -->
 				<div class="col-md-8 offset-md-1 mb-5" id="educationContent">
 					<div class="container">
-						<h5>Bachelor of Computer Engineering</h5>
-						<p>Isfahan University of Technology, 2021 - 2025<br>
-						<strong>GPA: 18.69/20</strong><br>
-						Ranked 1st in Software Engineering, 3rd overall</p>
-					</div>
+						<div class="row mt-2 language">
+							<h4 
+								data-es=""
+								data-en="Bachelor of Computer Engineering"></h4>
+
+							<p class="mt-1 justify"
+								data-es=""
+								data-en="Isfahan University of Technology (IUT), 2021-2025. GPA: 18.69/20 (Ranked 1st in Software Engineering Specialization, 3rd among all computer engineering peers)">
+							</p>
+
+						</div>
+				         </div>
 				</div>
 
 
@@ -180,114 +231,140 @@
 				<div class="col-md-8 offset-md-1 mb-5" id="publicationsContent">
 					<div class="container">
 
-						<div class="pub-block mb-4">
-							<div class="lucida-console h6">Forgetting: A New Mechanism Towards Better Large Language Model Fine-tuning</div>
-							<div class="pub-authors mt-1"><span class="pub-author">Ali Taheri Ghahrizjani</span>, Alireza Taban, Qizhou Wang, Shanshan Ye, Abdolreza Mirzaei, Tongliang Liu, Bo Han</div>
-							<div class="pub-congress">arXiv:2508.04329 (Submitted to ICLR 2026)</div>
-							<div class="mt-1">
-								<span><i class="ai ai-arxiv"></i> <a href="https://arxiv.org/abs/2508.04329" target="_blank" class="link-dark">arXiv</a></span>
-								<span class="pub-force-margin-left"><i class="fas fa-quote-left"></i> <a href="#" id="citation" class="link-dark">BibTeX</a></span>
-							</div>
-							<div class="d-none">
+						<!-- Each new year -->
+						<div class="row mt-3">
+
+							<!-- Each new publication inside the given year -->
+							<div class="pub-block">
+								<!-- Title -->
+								<div class="lucida-console h5">Forgetting: A New Mechanism Towards Better Large Language Model Fine-tuning</div>
+								<!-- Authors -->
+								<div class="pub-authors mt-1"><span class="pub-author">Ali Taheri Ghahrizjani</span>, Alireza Taban, Qizhou Wang, Shanshan Ye, Abdolreza Mirzaei, Tongliang Liu, Bo Han</div>
+								<!-- Place -->
+								<div class="pub-congress">arXiv preprint arXiv:2508.04329 (Submitted to ICLR 2026)</div>
+								<!-- Links -->
+								<div class="mt-1">
+									<span> <i class="ai ai-arxiv"></i> <a href="https://arxiv.org/abs/2508.04329" target="_blank" class="link-dark">arXiv</a> </span>
+									<span class="pub-force-margin-left"> <i class="fas fa-quote-left"></i> <a href="#" id="citation" class="link-dark">BibTeX</a> </span>
+								</div>
+								<!-- Citation -->
+								<div class="d-none">
 @article{taheri2025forgetting,
 	title={Forgetting: A New Mechanism Towards Better Large Language Model Fine-tuning},
 	author={Taheri Ghahrizjani, Ali and Taban, Alireza and Wang, Qizhou and Ye, Shanshan and Mirzaei, Abdolreza and Liu, Tongliang and Han, Bo},
 	journal={arXiv preprint arXiv:2508.04329},
 	year={2025}
 }</div>
+							</div>
 						</div>
 
-						<div class="pub-block">
-							<div class="lucida-console h6">AI-Based Synthesis of Barrier Certificates for Safe Cyber-Physical Systems</div>
-							<div class="pub-authors mt-1"><span class="pub-author">Ali Taheri</span>, under supervision of Prof. Sadegh Soudjani</div>
-							<div class="pub-congress">Under preparation for L4DC conferences</div>
+						<div class="row mt-3">
+							<div class="pub-block">
+								<div class="lucida-console h5">AI-Based Synthesis of Barrier Certificates for Safe Cyber-Physical Systems</div>
+								<div class="pub-authors mt-1"><span class="pub-author">Ali Taheri</span>, under supervision of Prof. Sadegh Soudjani</div>
+								<div class="pub-congress">Under preparation for submission to L4DC conferences</div>
+							</div>
 						</div>
 
 					</div>
 				</div>
 
-				<!-- Research -->
-				<div class="col-md-8 offset-md-1 mb-5" id="researchContent">
-					<div class="container">
-
-						<div class="academic-block mb-4">
-							<div class="lucida-console h6 academic-name">Research Internship</div>
-							<div class="academic-rol mt-1"><strong>Max Planck Institute for Software Systems (MPI-SWS)</strong></div>
-							<div class="academic-year">July 2025 - Present | Supervisor: Prof. Sadegh Soudjani</div>
-							<ul class="mt-2">
-								<li>Developing AI-based algorithms for barrier certificate synthesis in cyber-physical systems</li>
-							</ul>
-						</div>
-
-						<div class="academic-block mb-4">
-							<div class="lucida-console h6 academic-name">Research Assistant</div>
-							<div class="academic-rol mt-1"><strong>Hong Kong Baptist University - TMLR Group</strong></div>
-							<div class="academic-year">February 2025 - May 2025 | Advisors: Dr. Qizhou Wang, Prof. Bo Han</div>
-							<ul class="mt-2">
-								<li>Working on LLM Unlearning methodologies</li>
-							</ul>
-						</div>
-
-						<div class="academic-block mb-4">
-							<div class="lucida-console h6 academic-name">Research Assistant</div>
-							<div class="academic-rol mt-1"><strong>Isfahan University of Technology</strong></div>
-							<div class="academic-year">June 2024 - Present | Supervisors: Prof. Abdolreza Mirzaei, Prof. Oliver Schulte</div>
-							<ul class="mt-2">
-								<li>MOD-CLIP: Multi-label object detection for videos</li>
-							</ul>
-						</div>
-
-						<div class="academic-block">
-							<div class="lucida-console h6 academic-name">Research Intern</div>
-							<div class="academic-rol mt-1"><strong>Hong Kong Baptist University - TMLR Group</strong></div>
-							<div class="academic-year">September 2023 - April 2024 | Advisors: Dr. Qizhou Wang, Prof. Bo Han</div>
-							<ul class="mt-2">
-								<li>Analyzing Large Language Models and Vision-Language Models</li>
-							</ul>
-						</div>
-
+				<!-- Blog -->
+				<div class="col-md-8 offset-md-1 mb-5" id="blogContent">
+					<div class="container language">
+						🌲 
+						<span 
+							data-es=""
+							data-en="Coming soon...">
+						</span>
+						🌍
 					</div>
 				</div>
 
 				<!-- Experience -->
 				<div class="col-md-8 offset-md-1 mb-5" id="experienceContent">
 					<div class="container">
+
+						<!-- Each new year -->
+						<div class="row mt-2 language">
+							<h4 class="academic-year-h4">Research Experience</h4>
+
+							<!-- Each subject -->
+							<div class="academic-block mt-4">
+								<!-- Title -->
+								<div class="lucida-console h5 academic-name"> <span data-en="Research Internship - Max Planck Institute for Software Systems (MPI-SWS)" data-es=""></span></div>
+								<!-- Subtitle -->
+								<div class="academic-rol mt-1"><span data-en="Supervisor: Prof. Sadegh Soudjani" data-es=""></span></div>
+								<!-- Extra inf -->
+								<div class="academic-year"><span data-en="Jul 2025 - Present" data-es=""></span></div>
+								<p class="mt-2" data-en="Developing AI-based algorithms to synthesize barrier certificates for safe cyber-physical systems"></p>
+							</div>
+
+							<!-- Each subject -->
+							<div class="academic-block mt-4">
+								<!-- Title -->
+								<div class="lucida-console h5 academic-name"> <span data-en="Research Assistant - Hong Kong Baptist University (TMLR Group)" data-es=""></span></div>
+								<!-- Subtitle -->
+								<div class="academic-rol mt-1"><span data-en="Supervisors: Dr. Qizhou Wang and Prof. Bo Han" data-es=""></span></div>
+								<!-- Extra inf -->
+								<div class="academic-year"><span data-en="Feb 2025 - May 2025" data-es=""></span></div>
+								<p class="mt-2" data-en="Working on LLM Unlearning, focusing on developing effective methodologies for removing specific knowledge from large language models"></p>
+							</div>
+
+							<!-- Each subject -->
+							<div class="academic-block mt-4">
+								<!-- Title -->
+								<div class="lucida-console h5 academic-name"> <span data-en="Research Assistant - Isfahan University of Technology" data-es=""></span></div>
+								<!-- Subtitle -->
+								<div class="academic-rol mt-1"><span data-en="Supervisors: Prof. Abdolreza Mirzaei and Prof. Oliver Schulte" data-es=""></span></div>
+								<!-- Extra inf -->
+								<div class="academic-year"><span data-en="Jun 2024 - Present" data-es=""></span></div>
+								<p class="mt-2" data-en="Working on MOD-CLIP project: one-stage multi-label object detection approach for videos by combining CLIP distillation with graph neural network-based label correlation modeling"></p>
+							</div>
+
+							<!-- Each subject -->
+							<div class="academic-block mt-4">
+								<!-- Title -->
+								<div class="lucida-console h5 academic-name"> <span data-en="Research Intern - Hong Kong Baptist University (TMLR Group)" data-es=""></span></div>
+								<!-- Subtitle -->
+								<div class="academic-rol mt-1"><span data-en="Supervisors: Dr. Qizhou Wang and Prof. Bo Han" data-es=""></span></div>
+								<!-- Extra inf -->
+								<div class="academic-year"><span data-en="Sep 2023 - Apr 2024" data-es=""></span></div>
+								<p class="mt-2" data-en="Exploring and analyzing the capabilities and challenges of Large Language Models and Vision-Language Models"></p>
+							</div>
+						</div>
+
+						<div class="row mt-4 language">
+							<h4 class="academic-year-h4">Work Experience</h4>
+
+							<div class="academic-block mt-4">
+								<!-- Title -->
+								<div class="lucida-console h5 academic-name"> <span data-en="ML/CV Developer (Part-time) - Sanat Apadana" data-es=""></span></div>
+								<!-- Extra inf -->
+								<div class="academic-year"><span data-en="Jul 2022 - Dec 2022" data-es=""></span></div>
+								<p class="mt-2" data-en="Computer vision projects for various companies. Industrial projects focused on advanced image quality improvement and processing"></p>
+							</div>
+						</div>
+
+						<div class="row mt-4 language">
+							<h4 class="academic-year-h4">Teaching Experience</h4>
+
+							<div class="academic-block mt-4">
+								<!-- Title -->
+								<div class="lucida-console h5 academic-name"> <span data-en="Isfahan University of Technology" data-es=""></span></div>
+								<div class="academic-rol mt-1"><span data-en="Teaching Assistant" data-es=""></span></div>
+								<div class="academic-year">- <span data-en="Computational Intelligence (Spring 2025)" data-es=""></span></div>
+								<div class="academic-year">- <span data-en="Data Structures (Fall 2023-24 / Spring 2023-25)" data-es=""></span></div>
+								<div class="academic-year">- <span data-en="Software Engineering (Fall 2024)" data-es=""></span></div>
+								<div class="academic-year">- <span data-en="Artificial Intelligence (Fall 2024)" data-es=""></span></div>
+								<div class="academic-year">- <span data-en="Database (Fall 2024)" data-es=""></span></div>
+								<div class="academic-year">- <span data-en="Algorithm Design (Spring 2024)" data-es=""></span></div>
+								<div class="academic-year">- <span data-en="Fundamentals of Programming (Fall 2022)" data-es=""></span></div>
+							</div>
+						</div>
 						
-						<div class="academic-block mb-4">
-							<div class="lucida-console h6 academic-name">Teaching Assistant</div>
-							<div class="academic-rol mt-1"><strong>Isfahan University of Technology</strong></div>
-							<div class="academic-year">September 2022 - Present</div>
-							<p class="mt-2">
-								Computational Intelligence • Data Structures • Software Engineering • 
-								Artificial Intelligence • Database • Algorithm Design • Fundamentals of Programming
-							</p>
-						</div>
-
-						<div class="academic-block">
-							<div class="lucida-console h6 academic-name">ML/CV Developer (Part-time)</div>
-							<div class="academic-rol mt-1"><strong>Sanat Apadana</strong></div>
-							<div class="academic-year">July 2022 - December 2022 | Isfahan, Iran</div>
-							<ul class="mt-2">
-								<li>Computer vision projects for various companies</li>
-								<li>Industrial image processing applications</li>
-							</ul>
-						</div>
-
 					</div>
-				</div>
-
-				<!-- Awards -->
-				<div class="col-md-8 offset-md-1 mb-5" id="awardsContent">
-					<div class="container">
-						<ul>
-							<li class="mb-2"><strong>Highest Grade for Undergraduate Thesis Project</strong> - Isfahan University of Technology, 2025</li>
-							<li class="mb-2"><strong>1st Place in ICPC</strong> - Isfahan University of Technology, 2023</li>
-							<li class="mb-2"><strong>10th Place in 46th ICPC West Asia Regional Contest</strong> - 2023</li>
-							<li class="mb-2"><strong>3rd Place in National Machine Learning Competition</strong> - 2022</li>
-							<li class="mb-2"><strong>1st Place in ICPC</strong> - Isfahan University of Technology, 2022</li>
-						</ul>
-					</div>
-				</div>
+				</div> 
 
 			</div>
 		</div>
