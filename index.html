@@ -32,19 +32,25 @@
 		<style>
 			/* Main name title */
 			h3.mb-2 {
-				color: #2d8659;
+				color: #2d8659 !important;
 			}
 			
 			/* All h4 titles in main content */
 			h4, 
 			#researchinterestsH4,
 			.academic-year-h4 {
-				color: #2d8659;
+				color: #2d8659 !important;
 			}
 			
 			/* Section titles in language divs */
 			.language h4 {
-				color: #2d8659;
+				color: #2d8659 !important;
+			}
+
+			/* Make sure all h4 elements are green */
+			div.language h4,
+			div.row.language h4 {
+				color: #2d8659 !important;
 			}
 		</style>
 
@@ -71,10 +77,10 @@
 
 	<body>
 
-		<!-- Bottom rounded button -->
+		<!-- Bottom rounded buttons -->
 		<div class="options-button" id="options-toggler"><i class="fa-light fa-arrows-repeat"></i></div>
 		<div class="options-button" id="theme"><i class="fa-duotone fa-lightbulb"></i></div>
-		<div class="options-button" id="lan"><img class="lang-flag" src="https://flagcdn.com/w20/us.png" alt="Flag indicating the english language is selected"></div>
+		<!-- Language button removed -->
 
 
 		<!-- Navbar  -->
@@ -86,34 +92,28 @@
 				<div class="navbar-collapse collapse flex-grow-1 justify-content-center" id="collapsingNavbar3">
 					<ul class="navbar-nav mx-auto language" id="navbarList">
 						<li class="nav-item">
-							<a class="nav-link active" id="aboutme" href="#" 
-								data-es="Sobre Mi" 
-								data-en="About Me">
+							<a class="nav-link active" id="aboutme" href="#">
 								About Me
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="education" href="#" 
-								data-es="Educación" 
-								data-en="Education">
+							<a class="nav-link" id="education" href="#">
+								Education
 						</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="publications" href="#" 
-								data-es="Publicaciones" 
-								data-en="Publications">
+							<a class="nav-link" id="publications" href="#">
+								Publications
 						</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="blog" href="#" 
-								data-es="Blog" 
-								data-en="Blog">
+							<a class="nav-link" id="blog" href="#">
+								Blog
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="experience" href="#" 
-								data-es="" 
-								data-en="Experience">
+							<a class="nav-link" id="experience" href="#">
+								Experience
 							</a>
 						</li>
 					</ul>
@@ -135,8 +135,7 @@
 					<h3 class="mb-2">Ali Taheri</h3>
 
 					<p class="mb-4">
-						<span class="t-secondary" data-es="" 
-						data-en="Max Planck Institute for Software Systems (MPI-SWS)"></span>
+						<span class="t-secondary">Max Planck Institute for Software Systems (MPI-SWS)</span>
 					</p>
 					
 					
@@ -177,24 +176,20 @@
 				<div class="col-md-8 offset-md-1 mb-5 active" id="aboutmeContent">
 					<div class="container">
 						<div class="row language">
-							<p class="mt-2 justify" 
-								data-es="" 
-								data-en="I am a Computer Engineering graduate from Isfahan University of Technology (IUT), ranked 1st in Software Engineering Specialization and 3rd among all Computer Engineering peers. I have been fortunate to work with leading research groups, including the Trustworthy Machine Learning and Reasoning (TMLR) Group at Hong Kong Baptist University under Prof. Bo Han and Dr. Qizhou Wang, and I have joined the Max Planck Institute for Software Systems (MPI-SWS) as a Research Intern.">
+							<p class="mt-2 justify">
+								I am a Computer Engineering graduate from Isfahan University of Technology (IUT), ranked 1st in Software Engineering Specialization and 3rd among all Computer Engineering peers. I have been fortunate to work with leading research groups, including the Trustworthy Machine Learning and Reasoning (TMLR) Group at Hong Kong Baptist University under Prof. Bo Han and Dr. Qizhou Wang, and I have joined the Max Planck Institute for Software Systems (MPI-SWS) as a Research Intern.
 							</p>
 
-							<h4 id="researchinterestsH4" class="mt-3" 
-								data-es="Research Interests" 
-								data-en="Research Interests">
+							<h4 id="researchinterestsH4" class="mt-3">
+								Research Interests
 							</h4>
 
-							<p class="mt-1"
-								data-es=""
-								data-en="Trustworthy Machine Learning, Cyber-Physical Systems, Deep Learning, Machine Unlearning, Image Processing, Formal Methods, Algorithms">
+							<p class="mt-1">
+								Trustworthy Machine Learning, Cyber-Physical Systems, Deep Learning, Machine Unlearning, Image Processing, Formal Methods, Algorithms
 							</p>
 
-							<h4 class="mt-3" 
-								data-es="Honors and Awards" 
-								data-en="Honors and Awards">
+							<h4 class="mt-3">
+								Honors and Awards
 							</h4>
 
 							<ul class="abme-honors-list mt-2">
@@ -224,14 +219,12 @@
 				<div class="col-md-8 offset-md-1 mb-5" id="educationContent">
 					<div class="container">
 						<div class="row mt-2 language">
-							<h4 
-								data-es=""
-								data-en="Bachelor of Computer Engineering [2021–2025]">
+							<h4>
+								Bachelor of Computer Engineering [2021–2025]
 							</h4>
 
-							<p class="mt-1 justify"
-								data-es=""
-								data-en="Isfahan University of Technology (IUT)<br>GPA: 18.69/20, Ranked 1st in Software Engineering Specialization and 3rd overall">
+							<p class="mt-1 justify">
+								Isfahan University of Technology (IUT)<br>GPA: 18.69/20, Ranked 1st in Software Engineering Specialization and 3rd overall
 							</p>
 
 						</div>
@@ -286,9 +279,8 @@
 				<div class="col-md-8 offset-md-1 mb-5" id="blogContent">
 					<div class="container language">
 						🌲 
-						<span 
-							data-es=""
-							data-en="Coming soon...">
+						<span>
+							Coming soon...
 						</span>
 						🌍
 					</div>
@@ -305,43 +297,43 @@
 							<!-- Each subject -->
 							<div class="academic-block mt-4">
 								<!-- Title -->
-								<div class="lucida-console h5 academic-name"> <span data-en="Research Internship - Max Planck Institute for Software Systems (MPI-SWS)" data-es=""></span></div>
+								<div class="lucida-console h5 academic-name">Research Internship - Max Planck Institute for Software Systems (MPI-SWS)</div>
 								<!-- Extra inf -->
-								<div class="academic-year"><span data-en="Jul 2025 - Present" data-es=""></span></div>
-								<p class="mt-2" data-en="Developing AI-based algorithms to synthesize barrier certificates for safe cyber-physical systems"></p>
+								<div class="academic-year">Jul 2025 - Present</div>
+								<p class="mt-2">Developing AI-based algorithms to synthesize barrier certificates for safe cyber-physical systems</p>
 							</div>
 
 							<!-- Each subject -->
 							<div class="academic-block mt-4">
 								<!-- Title -->
-								<div class="lucida-console h5 academic-name"> <span data-en="Research Assistant - Hong Kong Baptist University (TMLR Group)" data-es=""></span></div>
+								<div class="lucida-console h5 academic-name">Research Assistant - Hong Kong Baptist University (TMLR Group)</div>
 								<!-- Subtitle -->
-								<div class="academic-rol mt-1"><span data-en="Supervisors: Dr. Qizhou Wang and Prof. Bo Han" data-es=""></span></div>
+								<div class="academic-rol mt-1">Supervisors: Dr. Qizhou Wang and Prof. Bo Han</div>
 								<!-- Extra inf -->
-								<div class="academic-year"><span data-en="Feb 2025 - May 2025" data-es=""></span></div>
-								<p class="mt-2" data-en="Working on LLM Unlearning, focusing on developing effective methodologies for removing specific knowledge from large language models"></p>
+								<div class="academic-year">Feb 2025 - May 2025</div>
+								<p class="mt-2">Working on LLM Unlearning, focusing on developing effective methodologies for removing specific knowledge from large language models</p>
 							</div>
 
 							<!-- Each subject -->
 							<div class="academic-block mt-4">
 								<!-- Title -->
-								<div class="lucida-console h5 academic-name"> <span data-en="Research Assistant - Isfahan University of Technology" data-es=""></span></div>
+								<div class="lucida-console h5 academic-name">Research Assistant - Isfahan University of Technology</div>
 								<!-- Subtitle -->
-								<div class="academic-rol mt-1"><span data-en="Supervisors: Prof. Abdolreza Mirzaei and Prof. Oliver Schulte" data-es=""></span></div>
+								<div class="academic-rol mt-1">Supervisors: Prof. Abdolreza Mirzaei and Prof. Oliver Schulte</div>
 								<!-- Extra inf -->
-								<div class="academic-year"><span data-en="Jun 2024 - Present" data-es=""></span></div>
-								<p class="mt-2" data-en="Working on MOD-CLIP project: one-stage multi-label object detection approach for videos by combining CLIP distillation with graph neural network-based label correlation modeling"></p>
+								<div class="academic-year">Jun 2024 - Present</div>
+								<p class="mt-2">Working on MOD-CLIP project: one-stage multi-label object detection approach for videos by combining CLIP distillation with graph neural network-based label correlation modeling</p>
 							</div>
 
 							<!-- Each subject -->
 							<div class="academic-block mt-4">
 								<!-- Title -->
-								<div class="lucida-console h5 academic-name"> <span data-en="Research Intern - Hong Kong Baptist University (TMLR Group)" data-es=""></span></div>
+								<div class="lucida-console h5 academic-name">Research Intern - Hong Kong Baptist University (TMLR Group)</div>
 								<!-- Subtitle -->
-								<div class="academic-rol mt-1"><span data-en="Supervisors: Dr. Qizhou Wang and Prof. Bo Han" data-es=""></span></div>
+								<div class="academic-rol mt-1">Supervisors: Dr. Qizhou Wang and Prof. Bo Han</div>
 								<!-- Extra inf -->
-								<div class="academic-year"><span data-en="Sep 2023 - Apr 2024" data-es=""></span></div>
-								<p class="mt-2" data-en="Exploring and analyzing the capabilities and challenges of Large Language Models and Vision-Language Models"></p>
+								<div class="academic-year">Sep 2023 - Apr 2024</div>
+								<p class="mt-2">Exploring and analyzing the capabilities and challenges of Large Language Models and Vision-Language Models</p>
 							</div>
 						</div>
 
@@ -350,10 +342,10 @@
 
 							<div class="academic-block mt-4">
 								<!-- Title -->
-								<div class="lucida-console h5 academic-name"> <span data-en="ML/CV Developer (Part-time) - Sanat Apadana" data-es=""></span></div>
+								<div class="lucida-console h5 academic-name">ML/CV Developer (Part-time) - Sanat Apadana</div>
 								<!-- Extra inf -->
-								<div class="academic-year"><span data-en="Jul 2022 - Dec 2022" data-es=""></span></div>
-								<p class="mt-2" data-en="Computer vision projects for various companies. Industrial projects focused on advanced image quality improvement and processing"></p>
+								<div class="academic-year">Jul 2022 - Dec 2022</div>
+								<p class="mt-2">Computer vision projects for various companies. Industrial projects focused on advanced image quality improvement and processing</p>
 							</div>
 						</div>
 
@@ -362,15 +354,15 @@
 
 							<div class="academic-block mt-4">
 								<!-- Title -->
-								<div class="lucida-console h5 academic-name"> <span data-en="Isfahan University of Technology" data-es=""></span></div>
-								<div class="academic-rol mt-1"><span data-en="Teaching Assistant" data-es=""></span></div>
-								<div class="academic-year">- <span data-en=" TA - Computational Intelligence (Spring 2025)" data-es=""></span></div>
-								<div class="academic-year">- <span data-en="Head TA - Data Structures (Spring 2025 / Fall 2024 / Fall 2023 / Spring 2023)" data-es=""></span></div>
-								<div class="academic-year">- <span data-en="TA - Software Engineering (Fall 2024 )" data-es=""></span></div>
-								<div class="academic-year">- <span data-en="TA - Artificial Intelligence (Fall 2024)" data-es=""></span></div>
-								<div class="academic-year">- <span data-en="TA - Database (Fall 2024)" data-es=""></span></div>
-								<div class="academic-year">- <span data-en="TA - Algorithm Design (Spring 2024)" data-es=""></span></div>
-								<div class="academic-year">- <span data-en="Head TA - Fundamentals of Programming (Fall 2022)" data-es=""></span></div>
+								<div class="lucida-console h5 academic-name">Isfahan University of Technology</div>
+								<div class="academic-rol mt-1">Teaching Assistant</div>
+								<div class="academic-year">- TA - Computational Intelligence (Spring 2025)</div>
+								<div class="academic-year">- Head TA - Data Structures (Spring 2025 / Fall 2024 / Fall 2023 / Spring 2023)</div>
+								<div class="academic-year">- TA - Software Engineering (Fall 2024 )</div>
+								<div class="academic-year">- TA - Artificial Intelligence (Fall 2024)</div>
+								<div class="academic-year">- TA - Database (Fall 2024)</div>
+								<div class="academic-year">- TA - Algorithm Design (Spring 2024)</div>
+								<div class="academic-year">- Head TA - Fundamentals of Programming (Fall 2022)</div>
 							</div>
 						</div>
 						
