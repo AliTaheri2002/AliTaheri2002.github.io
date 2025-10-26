@@ -65,15 +65,6 @@
 				transform: scale(1.05);
 				box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 			}
-
-			/* Hide all content sections by default except active */
-			#section-content > div.col-md-8 {
-				display: none;
-			}
-			
-			#section-content > div.col-md-8.active {
-				display: block;
-			}
 		</style>
 
 	</head>
@@ -414,7 +405,7 @@
 				</div> 
 
 				<!-- Photos -->
-				<div class="col-md-8 offset-md-1 mb-5" id="photosContent">
+				<div class="col-md-8 offset-md-1 mb-5" id="photosContent" style="display:none;">
 					<div class="container">
 						<div class="row mt-2">
 							<p class="justify">
@@ -449,6 +440,27 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 		<script src="assets/js/languageManager.js"></script>
 		<script src="assets/js/main.js"></script>
+		
+		<!-- Custom navigation handler for Photos section -->
+		<script>
+			$(document).ready(function() {
+				// Add photos to the navigation system if not already handled
+				$('#photos').click(function(e) {
+					e.preventDefault();
+					
+					// Remove active class from all nav links
+					$('.nav-link').removeClass('active');
+					// Add active to clicked link
+					$(this).addClass('active');
+					
+					// Hide all content sections
+					$('#aboutmeContent, #educationContent, #publicationsContent, #blogContent, #experienceContent, #photosContent').removeClass('active').hide();
+					
+					// Show photos content
+					$('#photosContent').addClass('active').show();
+				});
+			});
+		</script>
 	</body>
 
 </html>
