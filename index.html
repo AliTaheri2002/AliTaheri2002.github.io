@@ -65,6 +65,15 @@
 				transform: scale(1.05);
 				box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 			}
+
+			/* Hide all content sections by default except active */
+			#section-content > div.col-md-8 {
+				display: none;
+			}
+			
+			#section-content > div.col-md-8.active {
+				display: block;
+			}
 		</style>
 
 	</head>
